@@ -1,7 +1,6 @@
 from openai.types.beta.threads import Run
 from openai.types.beta.thread import Thread
 from openai.types.beta.assistant import Assistant
-
 from openai.types.beta.assistant_create_params import Tool
 import time
 import json
@@ -121,7 +120,7 @@ class Trip:
     def call_required_functions(self, action_required):
         tool_outputs = []
         print("Checking agian")
-        print(f"Calling tool call required functions...{action_required["tool_calls"]}")
+        #print(f"Calling tool call required functions...{action_required["tool_calls"]}")
         
         
         for action in action_required["tool_calls"]:  
