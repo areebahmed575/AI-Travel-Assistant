@@ -1,7 +1,6 @@
 from openai.types.beta.threads import Run
 from openai.types.beta.thread import Thread
 from openai.types.beta.assistant import Assistant
-from openai.types.beta.assistant_create_params import Tool
 import time
 import json
 from openai import OpenAI
